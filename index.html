@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>input with javascript</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <div class="inputs">
+<label>What is your name:</label>
+<input type="text" id="mytext" />
+        </div>
+      <button onclick="input()">submit</button>
+    </div>  
+    <h1 id="message"></h1>
+    </div>
+
+    <script>
+        function input (){
+            let mytext = document.querySelector("#mytext")
+            let message = document.querySelector("#message")
+
+            message.innerHTML = "welcome to my webpage, " + mytext.value
+        }
+    </script>
+</body>
+</html>
